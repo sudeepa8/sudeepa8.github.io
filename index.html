@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial; margin:0; background:#f4f4f4; }
-    header { background:#222; color:white; padding:30px; text-align:center; }
-    section { padding:30px; background:white; margin:20px; border-radius:10px; }
-    h2 { color:#333; }
-    footer { background:#222; color:white; text-align:center; padding:10px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Your Name | Portfolio</title>
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --primary: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #334155;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  font-size: 0.9rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+}
+</style>
 </head>
 
 <body>
@@ -20,33 +89,42 @@
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>
-    I am an undergraduate ICT student passionate about software development
-    and building real-world solutions.
-  </p>
-</section>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am an undergraduate ICT student passionate about software development,
+      mobile applications, and building real-world solutions.
+    </p>
+  </div>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Java</li>
-    <li>React / React Native</li>
-    <li>Spring Boot</li>
-    <li>MySQL</li>
-    <li>HTML, CSS</li>
-  </ul>
-</section>
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>React</span>
+      <span>React Native</span>
+      <span>Spring Boot</span>
+      <span>MySQL</span>
+      <span>Git & GitHub</span>
+    </div>
+  </div>
 
-<section>
-  <h2>Projects</h2>
-  <p><strong>Smart Ambulance System</strong></p>
-  <p>Mobile-based real-time ambulance booking system.</p>
-</section>
+  <div class="card">
+    <h2>Projects</h2>
+    <p class="project-title">Smart Emergency Ambulance System</p>
+    <p>
+      A real-time ambulance request and booking system with GPS tracking
+      and driver-patient coordination.
+    </p>
+    <p><b>Tech:</b> React Native, Spring Boot, MySQL</p>
+  </div>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </div>
 </section>
 
 <footer>
